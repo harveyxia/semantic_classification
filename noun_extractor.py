@@ -1,3 +1,4 @@
+import string
 from collections import defaultdict
 from nltk.tag import _pos_tag as pos_tag
 from nltk.tokenize import word_tokenize
@@ -11,11 +12,14 @@ def get_nouns(filename):
     with open(filename, 'r') as f:
         for line in f:
             # 1. tokenize the text line
-            tokens = word_tokenize(line)
+            tokens = word_tokenize(_strip_punctuation(line))
             # 2. tag the POS of each lexical item
             tags = pos_tag(tokens, None, tagger)   # tagset is set to None
             # 3. filter for nouns
-            nouns = filter(lambda tag: tag[1]=='NN', tags)
-            for noun in nouns:
-                noun_dict[noun] += 1
-    return noun_dict
+            tagged_nouns = filter(lambda tag: tag[1]=='NN', tags)
+            for tagged_noun in tagged_nouns:
+                noun_dict[tagged_noun[0]] += 1
+    return dict(noun_dict)
+
+def _strip_punctuation(s):
+    return s.translate(string.maketrans("",""), string.punctuation)
