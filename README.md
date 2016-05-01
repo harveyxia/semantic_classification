@@ -10,13 +10,9 @@ nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 ```
 
-## Issues
-
-NLTK's POS tagger sometimes mis-tags words as nouns. For instance, it tags "tamer"
-in the following sentence as a noun: "Scientists once thought that some visionary hunter-gatherer nabbed a wolf puppy from its den one day and started raising tamer and tamer wolves".
-
 ## Algorithm
 
+semantic_classifier.py
 
 1. Extract all nouns from document, noun_extractor.py
 
@@ -39,8 +35,7 @@ in the following sentence as a noun: "Scientists once thought that some visionar
 7. Find the least common ancestor of each cluster of synsets.
 
 
-
-## Notes/Ideas
+## Notes/Ideas/Issues
 
 1. Semantic classification vs. what the article is about
 
@@ -57,3 +52,24 @@ in the following sentence as a noun: "Scientists once thought that some visionar
     0.705
 
 4. Incorporate noun counts for assigning 'salience scores' to each hypernym
+
+5. NLTK's POS tagger sometimes mis-tags words as nouns. For instance, it tags "tamer"
+in the following sentence as a noun: "Scientists once thought that some visionary hunter-gatherer nabbed a wolf puppy from its den one day and started raising tamer and tamer wolves".
+
+6. Currently, the algorithm only takes the first synset and first common hypernym
+
+    a. The first synset is the most frequently occurring, but it might be the
+    incorrect sense of the noun.
+    b. A set of synsets might have multiple lowest common hypernyms, some of which
+    may be more accurate than others.
+
+7. How to do evaluation?
+
+8. Morphology — collapse 'photography' and 'photograph'?
+
+9. Methodological limitations
+
+    a. Only accounts for nouns
+    b. Hypernym is not equivalent to 'semantic class' or 'content'
+    c. A document's complete semantic meaning cannot fully be captured by a set
+    of nouns
