@@ -31,9 +31,12 @@ def run(filename, min_size, max_size, dist):
 
 filename = 'test_article.txt'
 noun_dict = noun_extractor.get_nouns(filename)
-synset_list = cluster.get_synset_list(noun_dict)
+(synset_list, synset_dict) = cluster.get_synset_list(noun_dict)
 matrix = cluster.gen_sim_matrix(synset_list)
 clustering = cluster.format_clustering(cluster.cluster(matrix), synset_list)
 clusters = cluster.get_clusters(clustering, synset_list, 2, 99, dist=0.5)
 clusters = filter(lambda x: x[0] is not None, clusters)
-hypernyms = filter(lambda x: x is not None, map(lambda x: lca(x), clusters))
+cluster_counts = cluster.get_cluster_counts(clusters, synset_dict)
+# sort clusters by noun counts, most frequent first
+sorted_clusters = [x[1] for x in sorted(enumerate(clusters), key=lambda x: cluster_counts[x[0]], reverse=True)]
+hypernyms = filter(lambda x: x is not None, map(lambda x: lca(x), sorted_clusters))

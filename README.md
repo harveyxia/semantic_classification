@@ -15,6 +15,31 @@ nltk.download('averaged_perceptron_tagger')
 NLTK's POS tagger sometimes mis-tags words as nouns. For instance, it tags "tamer"
 in the following sentence as a noun: "Scientists once thought that some visionary hunter-gatherer nabbed a wolf puppy from its den one day and started raising tamer and tamer wolves".
 
+## Algorithm
+
+
+1. Extract all nouns from document, noun_extractor.py
+
+    a. Strip all punctuation and non-ascii characters from each line
+    b. Tokenize the line
+    c. Tag the POS of each token
+    d. Filter out all non-noun tokens
+    e. Add all noun tokens to a Python dict and track occurrences of each noun
+
+2. Convert nouns to synsets and remove nouns for which no synset exists
+
+3. Generate the 2D matrix of similarity values
+
+4. Perform hierarchical clustering
+
+5. Get clusters based on min_size, max_size, and dist parameters.
+
+6. Sort clusters by noun occurrence, most frequent first.
+
+7. Find the least common ancestor of each cluster of synsets.
+
+
+
 ## Notes/Ideas
 
 1. Semantic classification vs. what the article is about
@@ -25,4 +50,10 @@ in the following sentence as a noun: "Scientists once thought that some visionar
     the hypernym. The smaller the cluster size, especially pairs, yield the
     most accurate hypernyms, but there is less semantic synthesis.
 
-3. Incorporate noun counts for assigning 'salience scores' to each hypernym
+3. hypernym vs. content
+
+    E.g. "Photograph" is not clustered with "photography," their wup_similarity
+    is only 0.1176. But the wup_similarity of "photograph" with "painting" is
+    0.705
+
+4. Incorporate noun counts for assigning 'salience scores' to each hypernym

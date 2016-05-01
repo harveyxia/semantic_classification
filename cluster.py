@@ -7,18 +7,17 @@ import pdb
 
 def get_synset_list(noun_dict):
     synset_list = []
-    # create ordered list of nouns
-    noun_list = [noun for noun in noun_dict]
-    for noun in noun_list:
+    synset_dict = {}
+    for noun in noun_dict:
         synsets = wn.synsets(noun)
         # if no synset found
         if len(synsets) == 0:
-            pass
-            # synset_list.append(None)
+            pass    # remove nouns for which no synset is found
         else:
             # grab most common synset for each noun
+            synset_dict[synsets[0]] = noun_dict[noun]
             synset_list.append(synsets[0])
-    return synset_list
+    return (synset_list, synset_dict)
 
 # given a dict of noun:count, generate 2-dimensional similarity matrix
 # synset_list defines the mapping from index to synset for matrix
@@ -120,3 +119,14 @@ def get_cluster_members(i, clustering, synset_list):
     else:
         members.append(synset_list[i])
     return members
+
+# for each cluster of Synset, append an integer representing occurence of noun
+# token corresponding to that Synset
+def get_cluster_counts(clusters, synset_dict):
+    cluster_counts = []
+    for cluster in clusters:
+        count = 0
+        for synset in cluster:
+            count += synset_dict[synset]
+        cluster_counts.append(count)
+    return cluster_counts
