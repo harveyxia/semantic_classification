@@ -22,4 +22,6 @@ def get_nouns(filename):
     return dict(noun_dict)
 
 def _strip_punctuation(s):
-    return s.translate(string.maketrans("",""), string.punctuation)
+    printable = set(string.printable)
+    s = s.translate(string.maketrans("",""), string.punctuation)
+    return filter(lambda x: x in printable, s)

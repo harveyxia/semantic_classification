@@ -13,7 +13,8 @@ def get_synset_list(noun_dict):
         synsets = wn.synsets(noun)
         # if no synset found
         if len(synsets) == 0:
-            synset_list.append(None)
+            pass
+            # synset_list.append(None)
         else:
             # grab most common synset for each noun
             synset_list.append(synsets[0])
@@ -32,12 +33,12 @@ def gen_sim_matrix(synset_list):
             if syn1 is None or syn2 is None:
                 matrix[i1][i2] = 0
             elif syn1 is syn2:
-                matrix[i1][i2] = wn.wup_similarity(syn1, syn2)
+                matrix[i1][i2] = 1 - wn.wup_similarity(syn1, syn2)
             else:
                 try:
-                    matrix[i1][i2] = sim_values[(syn1, syn2)]
+                    matrix[i1][i2] = 1 - sim_values[(syn1, syn2)]
                 except KeyError:
-                    matrix[i1][i2] = sim_values[(syn2, syn1)]
+                    matrix[i1][i2] = 1 - sim_values[(syn2, syn1)]
     return matrix
 
 def get_sim_values(synset_list):
@@ -58,7 +59,7 @@ def get_sim_values(synset_list):
 
 # perform hiearchical clustering
 def cluster(matrix):
-    return fastcluster.weighted(matrix)
+    return fastcluster.median(matrix)
 
 # replaces stepwise cluster distance of the whole cluster
 def format_clustering(clustering, synset_list):
@@ -82,13 +83,13 @@ def format_clustering(clustering, synset_list):
 # elements may be in more than one cluster
 # where the distance of the cluster is <= dist
 # dist is the threshold at which to consider clusters
-def get_clusters(clustering, synset_list, dist=None, size=2):
+def get_clusters(clustering, synset_list, min_size, max_size, dist=None):
     clusters = []
     # get all clusters with less than d distance
     filtered_clustering = list(clustering)
     if dist is not None:
         filtered_clustering = filter(lambda x: x[2] <= dist, filtered_clustering)
-    filtered_clustering = filter(lambda x: x[3] == size, filtered_clustering)
+    filtered_clustering = filter(lambda x: x[3] <= max_size and x[3] >= min_size, filtered_clustering)
     # sort by smallest clusters first
     filtered_clustering = sorted(filtered_clustering, key=lambda x: x[2], reverse=False)
     # assign elements to clusters uniquely
