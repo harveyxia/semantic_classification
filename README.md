@@ -73,3 +73,5 @@ in the following sentence as a noun: "Scientists once thought that some visionar
     b. Hypernym is not equivalent to 'semantic class' or 'content'
     c. A document's complete semantic meaning cannot fully be captured by a set
     of nouns
+
+10. discuss clustering mode, i.e. median vs. complete

@@ -56,7 +56,7 @@ def get_sim_values(synset_list):
                 sim_values[pair] = sim_values[pair]
     return dict(sim_values)
 
-# perform hiearchical clustering
+# perform hiearchical clustering using fastcluster library
 def cluster(matrix):
     return fastcluster.median(matrix)
 
