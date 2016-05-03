@@ -3,8 +3,11 @@ from collections import defaultdict
 from nltk.tag import _pos_tag as pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.tag.perceptron import PerceptronTagger
+from nltk.stem.regexp import RegexpStemmer
 
 tagger = PerceptronTagger()
+
+st = RegexpStemmer('ing$|s$|e$|able$|y$|er$', min=4)
 
 # Given a filename, return a dict of nouns:count
 def get_nouns(filename):
@@ -18,10 +21,13 @@ def get_nouns(filename):
             # 3. filter for nouns
             tagged_nouns = filter(lambda tag: tag[1]=='NN', tags)
             for tagged_noun in tagged_nouns:
-                noun_dict[tagged_noun[0]] += 1
+                noun_dict[stem_word(tagged_noun[0])] += 1
     return dict(noun_dict)
 
 def _strip_punctuation(s):
     printable = set(string.printable)
     s = s.translate(string.maketrans("",""), string.punctuation)
     return filter(lambda x: x in printable, s)
+
+def stem_word(word):
+    return st.stem(word)
