@@ -1,296 +1,296 @@
-1:Zika virus,Helms Amendment,Latin America,abortion
-2:Greenland,suicide,mental health
-3:sony world photography awards,photos,World
-4:lliberia,West Africa,ebola
-5:raed saleh,humanitarian work,White Helmets,Syria
-6:Doctors Without Borders,Aleppo,Syria
-7:Mowgli,Jungle Book,tigers,India
-8:pasang lama,kathmandu,Nepal,Earthquake
-9:lemonade,warsan shire,Beyonce
+1:virus,amendment,latin_america,abortion
+2:Greenland,suicide,mental_health
+3:photography,awards,photos,World
+4:liberia,West_Africa,ebola
+5:humanitarian,Syria
+6:Doctors,Aleppo,Syria
+7:Jungle,Book,tigers,India
+8:pasang,lama,kathmandu,Nepal,Earthquake
+9:lemonade
 10:migrants,Senegal,Africa
-11:surgery,Global Health
-12:Aging,HIV/AIDS
+11:surgery,Health,Global
+12:Aging,HIV,AIDS
 13:scandal,China,Vaccines
 14:Malaria,Europe
 15:Eskimo,Inuit,Greenland
-16:wrestling,child brides,India
-17:Goldman Environmental Prize,environment,Cambodia,earth day
-18:Israelites,seder,Syrian refugees,Egypt,Haggadah,Passover
-19:suicide prevention,suicide
-20:developing world,Greenland
-21:Zika virus,crowdfunding
-22:Tamil Nadu,heat wave,India
-23:Malick Sidibe,Mali,photography,Africa
-24:Mary Guinan,smallpox,AIDS,CDC,Global Health
-25:soap opera,depression,mental health
-26:Za'atari refugee camp,Syrian refugees
-27:schizophrenia,depression,mental health
-28:Zika virus
-29:#BringBackOurGirls,#BringBackOurGirls,Boko Haram,Nigeria
+16:wrestling,child,brides,India
+17:Environmental,Prize,environment,Cambodia,earth,day
+18:Israelites,seder,Syrian,refugees,Egypt,Haggadah,Passover
+19:prevention,suicide
+20:developing,world,Greenland
+21:virus,funding
+22:Tamil_Nadu,heat_wave,India
+23:Mali,photography,Africa
+24:smallpox,AIDS,CDC,Global,Health
+25:soap_opera,depression,mental_health
+26:refugee,Syrian
+27:schizophrenia,depression,mental_health
+28:virus
+29:Nigeria
 30:wildlife,poaching,Africa,technology
 31:remittances
-32:marital rape,India
-33:Syrian refugees
-34:goats,Jamaica,Starbucks
+32:marital,rape,India
+33:Syrian,refugees
+34:goats,Jamaica,coffee
 35:laughter
-36:birth defect,Cleft,Ghana
-37:zika,telemedicine,Health Care,Brazil
+36:birth_defect,Cleft,Ghana
+37:virus,medicine,Health_Care,Brazil
 38:dog,Turkey,Kenya,Nepal
-39:zika,mosquitoes,U.S. military
-40:Street Harassment
-41:monkey malaria
-42:American Samoa,Diabetes,fast food
-43:Panama Papers,Africa
-44:microcephaly,Zika virus,Brazil
-45:sir fazle hasan abed,BRAC,poverty,Bangladesh
-46:Street Harassment
-47:TB,HIV/AIDS
-48:women only,Delhi,subway
-49:Dominican Republic,Baseball,Mexico,Venezuela
-50:'parachute research',Zika virus,ebola
-51:capoeira,martial art,child soldiers,boys,UNICEF
+39:virus,mosquitoes,United_states,military
+40:Street,Harassment
+41:monkey,malaria
+42:American_Samoa,Diabetes,fast_food
+43:Panama,Papers,Africa
+44:microcephaly,virus,Brazil
+45:poverty,Bangladesh
+46:Street,Harassment
+47:TB,HIV,AIDS
+48:women,Delhi,subway
+49:Dominican_Republic,Baseball,Mexico,Venezuela
+50:research,virus,ebola
+51:martial_arts,child,soldiers,boys,UNICEF
 52:India,Bollywood
-53:April Fools Day,Africa
-54:delivery service,Nigeria
-55:migrants,Thailand,Health Care
-56:disapproval,"not face"
-57:zika,microcephaly,pregnancy
-58:aedes aegypti,zika,mosquitoes
-59:Hello Tractor,farmers,Nigeria,agriculture
-60:gayle smith,budget,USAID,foreign aid
+53:April_Fools,Africa
+54:delivery,Nigeria
+55:migrants,Thailand,Health_Care
+56:disapproval
+57:virus,microcephaly,pregnancy
+58:aedes_aegypti,virus,mosquitoes
+59:Tractor,farmers,Nigeria,agriculture
+60:budget,US,AID,foreign_aid
 61:Elephants,Cambodia
-62:jazz festival,Senegal
-63:Guinea,Sierra Leone,ebola,Liberia
+62:jazz,festival,Senegal
+63:Guinea,Sierra_Leone,ebola,Liberia
 64:AIDS,HIV,Cuba
-65:Angola,yellow fever,Vaccines
-66:genetically engineered mosquitoes,zika,Brazil
-67:Ivory Coast,Terrorism,Al-Qaida
-68:zika,Zika virus,virus
+65:Angola,yellow_fever,Vaccines
+66:genetically,engineered,mosquitoes,virus,Brazil
+67:Ivory_Coast,Terrorism,Al-Qaida
+68:mosquito,virus
 69:rats,TB
-70:iud,Birth Control
-71:International Rescue Committee,ebola
-72:holi,drought,India
-73:nipah virus,bats,Bangladesh,alcohol
-74:#worldwaterday,contaminated water,water,drinking water,World
-75:cholera,United Nations,Haiti
-76:international day,U.N.
-77:cars rapides,Senegal
-78:burundian people,Burundi,happiness
-79:andrea noel,femicide,sexual harassment
-80:playlist,International Happiness Day,Panama
+70:iud,Birth_Control
+71:international,rescue,committee,ebola
+72:drought,India
+73:virus,bats,Bangladesh,alcohol
+74:contaminated,water,drinking_water,World
+75:cholera,United_Nations,Haiti
+76:international,United_nations
+77:cars,Senegal
+78:burundian,people,Burundi,happiness
+79:sexual_harassment
+80:playlist,International,Happiness,Panama
 81:Castro,Ballet,Cuba
-82:Delhi metro,Washington Metro
-83:children's art,Syrian refugees
-84:Nigeria,Ireland,Catholics,st. patrick's day
-85:bus rapid transit,washington, d.c. metro
-86:Dar es Salaam,mapping,Tanzania
-87:rape,United Nations
-88:microcephaly,Zika virus,Brazil
-89:Pi,pi day
+82:Delhi,metro,Washington
+83:children,art,Syrian,refugees
+84:Nigeria,Ireland,Catholics
+85:bus,rapid_transit,washington_d.c.
+86:Dar_es_Salaam,mapping,Tanzania
+87:rape,United_Nations
+88:microcephaly,virus,Brazil
+89:Pi
 90:protein,malnutrition
-91:spring forward,Namibia,daylight saving time,energy,Bangladesh,South Africa,Egypt
-92:african commission,#15Girls,Ethiopia,rape,Girls
-93:teacher,terrrorism,Kenya
-94:massacre,South Sudan,Amnesty International
-95:female food heroes,Oxfam,Tanzania,farmers
-96:pregnant women,Malaria,Global Health
-97:ebola,International Women's Day,HIV,HIV/AIDS,women's history month,Oscars
-98:basket making,asylum seekers,eritrea,Ethiopia,Sudan,Israel
-99:International Women's Day
-100:astrid hadad,a-wa,drummer queen,aziza brahim,tritha electric,International Women's Day
-101:South Sudan
-102:poorest communities,grand convergence,tuberculosis,maternal health,Malaria,Global Health,HIV/AIDS
+91:spring,Namibia,daylight,time,energy,Bangladesh,South_Africa,Egypt
+92:african,commission,Ethiopia,rape,Girls
+93:teacher,terrorism,Kenya
+94:massacre,Sudan,Amnesty,International
+95:female,food,heroes,Tanzania,farmers
+96:pregnant,women,Malaria,Global,Health
+97:ebola,International,Women,HIV,AIDS,history,Oscars
+98:basket,asylum,eritrea,Ethiopia,Sudan,Israel
+99:International,Women
+100:drummer,International,women
+101:Sudan
+102:poorest,communities,convergence,tuberculosis,maternal,Malaria,Global,Health,HIV,AIDS
 103:Shiva,marijuana,Nepal
-104:Gates Annual Letter,energy
-105:Robin Hammond,Where Love Is Illegal,LGBT
-106:lassa fever,ebola,Nigeria
-107:mad max,Namibia,Oscars
-108:TOMS Shoes,Oscars
-109:narendra modi,budget,India
-110:airbnb,Africa
-111:French Polynesia,zika,Zika virus,Guillain-Barre syndrome,mosquito-borne illness
-112:Zika virus,Brazil
-113:honor killings,film,Pakistan
+104:Gates,Annual,Letter,energy
+105:Love,Illegal,lesbian,gay
+106:lassa_fever,ebola,Nigeria
+107:Namibia,Oscars
+108:TOMS,Shoes,Oscars
+109:budget,India
+110:rent,Africa
+111:French_Polynesia,virus,Guillain-Barre_syndrome,mosquito,illness
+112:virus,Brazil
+113:honor_killings,film,Pakistan
 114:ebola,Liberia,Oscars
-115:The Look Of Silence,Joshua Oppenheimer,Oscar nominees,documentary
-116:malnutrition,South Sudan,United Nations
-117:northern uganda,group therapy,depression,Uganda,HIV
-118:zika,microcephaly,Zika virus,Brazil
-119:microcephaly,Zika virus,Colombia
+115:Look,Silence,Oscars,nominees,documentary
+116:malnutrition,Sudan,United_Nations
+117:uganda,group_therapy,depression,Uganda,HIV
+118:microcephaly,virus,Brazil
+119:microcephaly,virus,Colombia
 120:goats,soda
-121:fgm,female genital mutilation
-122:Zika virus,Venezuela,Colombia
-123:gender gap,sex education,Pakistan
-124:Zika virus,mosquitoes
-125:microcephaly,Zika virus,birth defects,virus,CDC
-126:crypto,crag,infectious diseases,AIDS,HIV,CDC
-127:aedes aegypti,Zika virus,mosquitoes
-128:mental health
-129:zika,Zika virus,drinking water,pesticides
-130:microcephaly,Zika virus,Brazil
-131:zomba prison project,world music,songs
-132:microcephaly,Zika virus,Zika virus,Colombia,Brazil
-133:zika,Zika virus,Jamaica
-134:jaded aid,global development,aid,aid workers,games
-135:northern ghana,proverb,billy goat,peace corps,West Africa,Ghana
-136:urban planning,Zambia,Angola,childbirth,Ecuador,Global Health
-137:Global Health
-138:microcephaly,Zika virus,Latin America,contraception,abortion
-139:aedes aegypti,Zika virus,mosquitoes
-140:vaquita,totoaba,bladder
-141:French Polynesia,Zika virus
-142:tuberculosis,Malaria,AIDS,Global Health
-143:contest,Global Health
-144:female genital mutilation,Indonesia
-145:zika,reservoirs,Zika virus,epidemic,pandemic,outbreak,public health,disease
+121:female,genital,mutilation
+122:virus,Venezuela,Colombia
+123:gender,gap,sex,education,Pakistan
+124:virus,mosquitoes
+125:microcephaly,virus,birth_defects,virus,CDC
+126:crag,infectious,diseases,AIDS,HIV,CDC
+127:aedes_aegypti,virus,mosquitoes
+128:mental_health
+129:virus,drinking_water,pesticides
+130:microcephaly,virus,Brazil
+131:zomba,prison,project,world,music,songs
+132:microcephaly,virus,Colombia,Brazil
+133:virus,Jamaica
+134:jaded,aid,global,development,workers,games
+135:proverb,billy_goat,peace_corps,West_Africa,Ghana
+136:urban_planning,Zambia,Angola,childbirth,Ecuador,Global,Health
+137:Global,Health
+138:microcephaly,virus,Latin_America,contraception,abortion
+139:aedes_aegypti,virus,mosquitoes
+140:vaquita,bladder
+141:French_Polynesia,virus
+142:tuberculosis,Malaria,AIDS,Global,Health
+143:contest,Global,Health
+144:female,genital,mutilation,Indonesia
+145:reservoirs,virus,epidemic,pandemic,outbreak,public,health,disease
 146:ebola,surfing,Liberia
-147:Zika virus,mosquitoes,Brazil
-148:Zika virus,Brazil
-149:Zika virus,Carnival,Brazil
-150:central american,sex slavery,Guatemala,Trial
-151:microcephaly,Zika virus,Guillain-Barre syndrome,mosquitoes,Centers for Disease Control
+147:virus,mosquitoes,Brazil
+148:virus,Brazil
+149:virus,Carnival,Brazil
+150:central_american,sex,slavery,Guatemala,Trial
+151:microcephaly,virus,Guillain-Barre_syndrome,mosquitoes,CDC
 152:missionaries,aid,Nepal
-153:Zika virus,Brazil
-154:Zika virus,Venezuela
-155:Zika virus,World Health Organization
-156:Zika virus,rubella,abortion
-157:DEET,repellents,mosquitoes
-158:sleeping sickness,sub-Saharan Africa,parasite
-159:microcephaly,Zika virus,Brazil
-160:diseases,child mortality,road accidents
-161:Zika virus,mosquitoes,birth defects,WHO
+153:virus,Brazil
+154:virus,Venezuela
+155:virus,WHO
+156:virus,rubella,abortion
+157:repellents,mosquitoes
+158:sleeping_sickness,sub-Saharan_Africa,parasite
+159:microcephaly,virus,Brazil
+160:diseases,child,mortality,road,accidents
+161:virus,mosquitoes,birth_defects,WHO
 162:snow
-163:tony elumelu,entrepreneurs,Nigeria,Unemployment
+163:entrepreneurs,Nigeria,Unemployment
 164:sex,contraception
-165:zika,Zika virus,infection,Brazil,America
-166:Zika virus,Latin America,El Salvador,women
-167:Genetically modified mosquitoes,Zika virus,mosquitoes,Brazil
-168:arctic circle,winter sunrise,Greenland
-169:childbirth,contraception,sex education,pregnancy
-170:travel risks,Global Health
-171:Year of the Monkey,Year of the Goat,birth rate,goats,China
-172:microcephaly,Zika virus,Brazil
-173:El Nino,extreme weather
-174:live q&a;,live web stream,zika,Zika virus
-175:Kenya,Netflix
-176:global south,refugees,Blizzard,snow,Canada,Syria
-177:fgm,Maasai,cricket,film,Kenya
+165:virus,infection,Brazil,America
+166:virus,Latin_America,El_Salvador,women
+167:Genetic,virus,mosquitoes,Brazil
+168:arctic_circle,winter,sunrise,Greenland
+169:childbirth,contraception,sex,education,pregnancy
+170:travel,risks,Global,Health
+171:Year,Monkey,Goat,birth_rate,goats,China
+172:microcephaly,virus,Brazil
+173:El_Nino,extreme,weather
+174:live,question,answer,web,virus
+175:Kenya
+176:global,south,refugees,Blizzard,snow,Canada,Syria
+177:female,genital,mutilation,cricket,film,Kenya
 178:starvation,Syria
-179:modern day slavery,human trafficking
-180:microcephaly,Zika virus,Brazil
-181:epidemics,West Africa,Sierra Leone,ebola
-182:infectious diseases,Malaria,Cambodia,Gates Foundation,President Obama
-183:world tsunami awareness day,international day of women and girls in science,United Nations
-184:pharrell williams,World Toilet Day,United Nations
-185:peacekeeping,Central African Republic,sexual abuse,U.N.,Human Rights Watch
+179:modern,slavery,human,trafficking
+180:microcephaly,virus,Brazil
+181:epidemics,West_Africa,Sierra_Leone,ebola
+182:infectious_diseases,Malaria,Cambodia,Foundation,President
+183:world,tsunami,awareness,international,women,girls,science,United_Nations
+184:World,Toilet,United_Nations
+185:peacekeeping,Central_African_Republic,sexual_abuse,United_nations,Human_Rights,Watch
 186:vaccination,polio,Pakistan
-187:microcephaly,Zika virus,pregnant women,mosquito-borne illness,Brazil
-188:films,global issues,ebola,Movies,Oscars
-189:West Africa,ebola
-190:river blindness,Ghana
-191:neglected diseases,river blindness,Ghana
-192:Louis Pasteur,pandemic,ebola,flu
-193:Taiz,Yemen,WHO
-194:skin lighteners,skin color,India
-195:Dadaab,refugees,somalia,Kenya
-196:melioidosis,bacteria,disease
-197:New Delhi,pollution,Twitter
+187:microcephaly,virus,pregnant,women,mosquito,illness,Brazil
+188:films,global,issues,ebola,Movies,Oscars
+189:West_Africa,ebola
+190:river,blindness,Ghana
+191:neglected,diseases,river,blindness,Ghana
+192:Louis_Pasteur,pandemic,ebola,flu
+193:Yemen,WHO
+194:skin,lighten,color,India
+195:refugees,somalia,Kenya
+196:bacteria,disease
+197:New_Delhi,pollution,Twitter
 198:theater,Ghana
-199:steve mccurry,India
-200:Dayo Okeniyi,Shades of Blue,Jennifer Lopez
+199:India
+200:Shades,Blue,actress
 201:diseases,bats,ebola
-202:newborns,childbirth,maternal health,Global Health
+202:newborns,childbirth,maternal,Global,Health
 203:Shopping,ethics
-204:John Magufuli,Tanzania
-205:dung,ebay,India,Amazon
-206:hashtag,global development,Syrian refugees,U.N.,social media
-207:rotavirus,diarrhea,Tanzania,Global Health,Vaccines
-208:Zika virus,ebola,polio,World Health Organization,Malaria
-209:death and dying,palliative care,Uganda,Global Health
-210:mass transit,mosquitoes,Income,PEPFAR,circumcision,Global Health,HIV/AIDS
-211:nae nae,pop culture,Middle East,YouTube,Africa,video
-212:international aid,Ethiopia,famine,drought
-213:Gurung,kathmandu,New Year,Nepal,Earthquake
-214:#15Girls,Taylor Swift,menstruation,teen girls,gang violence,back pain
+204:Tanzania
+205:dung,India
+206:global,development,Syrian,refugees,United_nations,social,media
+207:rotavirus,diarrhea,Tanzania,Global,Health,Vaccines
+208:virus,ebola,polio,WHO,Malaria
+209:death,dying,palliative,care,Uganda,Global,Health
+210:transit,mosquitoes,Income,circumcision,Global,Health,HIV,AIDS
+211:pop,culture,Middle_East,Africa,video
+212:international,aid,Ethiopia,famine,drought
+213:kathmandu,New_Year,Nepal,Earthquake
+214:menstruation,teen,girls,gang,violence,back,pain
 215:dry,fistula,childbirth,Nigeria,women,Africa
-216:Guinea,Sierra Leone,ebola,World Health Organization,Liberia
-217:john boyega,the force awakens,Nigeria,Star Wars
-218:khartoum,mycetoma,mycetoma research center,fungus,Sudan,Global Health
-219:"Making Africa",Guggenheim Bilbao,Africa
-220:Museum of Tomorrow,Brazil
+216:Guinea,Sierra_Leone,ebola,WHO,Liberia
+217:force,awakens,Nigeria,movie
+218:khartoum,research,center,fungus,Sudan,Global,Health
+219:Guggenheim,Africa
+220:Museum,Tomorrow,Brazil
 221:atheism,Islam,Christianity,religion
-222:home decor,artisans,weaving,silk,India
-223:skulls,Miss Honduras,Miss Universe
-224:Christmas devil,Krampus,Liberia,Christmas
-225:Martin Shrkeli,drug pricing,Doctors Without Borders
-226:poor countries,holiday lights,renewable energy,energy,electricity,Christmas lights
+222:decor,artisans,weaving,silk,India
+223:skulls,Honduras,Miss,Universe
+224:Christmas,devil,Liberia,Christmas
+225:drug,pricing,Doctors
+226:poor,countries,holiday,lights,renewable,energy,electricity,Christmas
 227:ebola,Liberia
 228:sputum,tuberculosis,TB
 229:donations,charity
-230:pandemic,board games
-231:Zika virus,world travel,chikungunya,mosquito-borne illness,mumps,dengue fever,measles,polio
-232:therapy,children,disaster,Katrina
-233:al mudhwahi,Doctors Without Borders,World Health Organization,Yemen
-234:Integrity idol,ebola,Liberia
-235:liver cancer,cervical cancer,american cancer society,Cancer
-236:innovation,food production,USAID,farmers,energy
-237:#GoogleDoodle,Iyengar,Yoga
-238:women's rights,India,teenagers
-239:gender issues,India
+230:pandemic,board_games
+231:virus,world,travel,mosquito,illness,mumps,dengue_fever,measles,polio
+232:therapy,children,disaster,hurricane
+233:Doctors,WHO,Yemen
+234:Integrity,idol,ebola,Liberia
+235:liver_cancer,cervical,american,society,Cancer
+236:innovation,food,production,US,AID,farmers,energy
+237:Google,Yoga
+238:women,rights,India,teenagers
+239:gender,issues,India
 240:period,menstruation,India
-241:Zika virus,birth defects,pregnancy,Brazil
-242:ousmane ndiaye,Senegal,climate,farmers,climate change
-243:wind,csir,solar,renewable energy,coal,electricity,South Africa
-244:female genital mutilation,Egypt
-245:ki-moon,COP21,gender equality,U.N.,women,climate change
-246:mosques,Angola,Donald Trump,Muslims
-247:poor nations,wealthy nations,migration,trade,environment,foreign aid,security
-248:coal,India,climate change
-249:kissing bug disease,Chagas disease
-250:solar power,energy,India,climate change
-251:gun deaths,Guns
-252:pill bottles,suzi stephens,malawi project,malawi,Africa
-253:mosquitoes,diarrhea,Malaria,climate change
-254:Health Care,Nepal
+241:virus,birth_defects,pregnancy,Brazil
+242:Senegal,climate,farmers,climate_change
+243:wind,solar,renewable,energy,coal,electricity,South_Africa
+244:female,genital,mutilation,Egypt
+245:gender,equality,United_nations,women,climate_change
+246:mosques,Angola,Muslims
+247:poor,wealthy,nations,migration,trade,environment,foreign_aid,security
+248:coal,India,climate_change
+249:kissing_bug,disease,Chagas
+250:solar_power,energy,India,climate_change
+251:deaths,Guns
+252:pill_bottles,project,malawi,Africa
+253:mosquitoes,diarrhea,Malaria,climate_change
+254:Health_Care,Nepal
 255:ALBINOS,Tanzania
-256:Patrice Lumumba,science-fiction,headgear,Mali,ebola,Namibia,Nigeria,photography,Democratic Republic of Congo,immigrants
-257:road accidents,injuries
-258:developing countries,climate change
+256:science,fiction,headgear,Mali,ebola,Namibia,Nigeria,photography,Congo,immigrants
+257:road,accidents,injuries
+258:developing_countries,climate_change
 259:cellphone,peanuts,Senegal,farming
 260:vaccinations,polio,Ukraine
 261:poverty,sleep,India
-262:Aleppo,President Bashar al-Assad,Syria,Hospitals,Human Rights
-263:Tijuana,transgender,Mexico,HIV/AIDS
-264:nour basonugo hussein,unity state,ethnic warfare,icrc,Red Cross,South Sudan,UN
-265:#GivingTuesday,charity
-266:Central African Republic,Pope Francis,Uganda,Kenya
-267:medical care,jan swasthya sahyog,patients,Doctors,India
-268:United States,Buddhism,charity,Myanmar
-269:Pope Francis,Uganda
-270:peace corps,Ghana,Thanksgiving
-271:Malinche,Pocahontas,Thanksgiving,Mexico
-272:jason cone,humanitarian law,Medecins Sans Frontieres,Doctors Without Borders,MSF,Pentagon
+262:Aleppo,President,Syria,Hospitals,Human_Rights
+263:Tijuana,transgender,Mexico,HIV,AIDS
+264:unity,state,ethnic,warfare,Red_Cross,Sudan,UN
+265:Tuesday,charity
+266:Central_African_Republic,Pope,Uganda,Kenya
+267:medical,care,patients,Doctors,India
+268:United_States,Buddhism,charity,Myanmar
+269:Pope,Uganda
+270:peace_corps,Ghana,Thanksgiving
+271:Pocahontas,Thanksgiving,Mexico
+272:humanitarian,law,Doctors,Pentagon
 273:ebola,Liberia
-274:Central African Republic,Pope Francis,El Salvador,poland,Uganda,Kenya,Pope John Paul II
-275:cold chain,global good,WHO,Vaccines
-276:Jewish history,anti-Semitism,refugees,Holocaust,bolivia,Nazis,Argentina
-277:Rohingya,stateless,Roma,Asia,Africa,Myanmar
-278:roundworm,hookworm,parasite,pregnancy,bolivia,Global Health
-279:Rusty Radiator,fundraising,poverty,Africa
+274:Central_African_Republic,Pope,El_Salvador,poland,Uganda,Kenya
+275:cold,chain,global,good,WHO,Vaccines
+276:Jewish,history,anti-Semitism,refugees,Holocaust,bolivia,Nazis,Argentina
+277:stateless,Roma,Asia,Africa,Myanmar
+278:roundworm,hookworm,parasite,pregnancy,bolivia,Global,Health
+279:Rusty,Radiator,fundraising,poverty,Africa
 280:ebola,Liberia
-281:pigs,antibiotic resistance,E. coli,China
-282:latrines,World Toilet Day,toilets
-283:World Toilet Day,toilets,Kenya
-284:Zika virus,Caribbean,Asia,mosquitoes,Mexico,Colombia,Brazil,Africa
-285:paris attacks,Syrian refugees,Jordan,Turkey,Lebanon
-286:baidu research,housing developments,ghost cities,urbanization,real estate,China
-287:hand washing,water purification,UNICEF,Malaria,Vaccines
+281:pigs,antibiotic,resistance,E._coli,China
+282:latrines,World,toilets
+283:World,toilets,Kenya
+284:virus,Caribbean,Asia,mosquitoes,Mexico,Colombia,Brazil,Africa
+285:paris,attacks,Syrian,refugees,Jordan,Turkey,Lebanon
+286:research,housing_developments,ghost,cities,urbanization,real_estate,China
+287:hand,washing,water,purification,UNICEF,Malaria,Vaccines
 288:terrorist,donations,refugees,Paris,Syria
 289:Nigeria,Terrorism,Kenya,Paris
 290:measles,Vaccines
-291:Master of None,aziz ansari,India
-292:neglected tropical diseases,mass deworming,cochrane review,intestinal worms,public health,children
+291:comedian,India,TV
+292:tropical,diseases,review,intestinal,worms,public,health,children
 293:power,Zambia,electricity
-294:#15Girls,gangs,menstruation,child marriage,El Salvador,Education,Soccer,Nepal,Syria,Brazil,Lebanon,Afghanistan
-295:menstruation,Syrian refugees,child brides,Education,Soccer,Nepal,Brazil,India,charity,Afghanistan
-296:Sierra Leone,ebola
+294:Girls,gangs,menstruation,child,marriage,El_Salvador,Education,Soccer,Nepal,Syria,Brazil,Lebanon,Afghanistan
+295:menstruation,Syrian,refugees,child,brides,Education,Soccer,Nepal,Brazil,India,charity,Afghanistan
+296:Sierra_Leone,ebola
