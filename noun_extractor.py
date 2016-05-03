@@ -4,6 +4,7 @@ from nltk.tag import _pos_tag as pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.tag.perceptron import PerceptronTagger
 from nltk.stem.regexp import RegexpStemmer
+from nltk.corpus import wordnet as wn
 
 tagger = PerceptronTagger()
 
@@ -21,7 +22,13 @@ def get_nouns(filename):
             # 3. filter for nouns
             tagged_nouns = filter(lambda tag: tag[1]=='NN', tags)
             for tagged_noun in tagged_nouns:
-                noun_dict[stem_word(tagged_noun[0])] += 1
+                # only include stemmed word if synsets can be found for it
+                # i.e. it's an actual word
+                stemmed_word = stem_word(tagged_noun[0])
+                if len(wn.synsets(stemmed_word)) > 0:
+                    noun_dict[stemmed_word] += 1
+                else:
+                    noun_dict[tagged_noun[0]] += 1
     return dict(noun_dict)
 
 def _strip_punctuation(s):
