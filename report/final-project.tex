@@ -15,7 +15,7 @@
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 \usepackage{acl2016}
 \usepackage{times}
 \usepackage{url}
@@ -106,9 +106,30 @@ We chose to exclude clusters smaller than size 2 and larger than size 99, as wel
 
 The algorithm evaluates performance by finding the item in the hypernyms returned by our algorithm that is most similar to a tag for each labeled tag of the text document. We use Wu-Palmer similarity as a measure of how similar two words are according to WordNet.
 
-\section{The Corpus}
+\section{Evaluation}
 
-NPR woooooo
+We tested our algorithm on 295 articles taken from NPR's website, since these articles contained tags describing what the article was about. On average, the articles contained about 925 words, 135 of which were nouns. Of these 135 nouns, there were on average 87 distinct nouns. These nouns were then clustered by our algorithm and the hypernyms were created for each cluster. The most similar hypernym was computed for each tag for the article, and this similarity score (which took on values from 0 to 1) was then summed for all the tags and divided by the number of tags. That is, our overall similarity score for each document was:
+
+\[
+ \frac{1}{\#_{tags}} \sum_{t \in tags}{(\max_{h \in hypernyms}{wupSimilarity(h, t)})}
+\]
+
+This score would be closer to 1 if the closest hypernym for each tag was highly similar, and closer to 0 if the closest hypernym for each tag was highly dissimilar.
+
+\section{Results}
+
+We computed these similarity scores explained above for each article, and the resulting distribution of scores for each article is shown in Figure \ref{scoreHist}.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{../scoreHist.png}
+\caption{Distribution of scores.}
+\label{scoreHist}
+\end{figure*}
+
+The distribution of scores roughly approximates a bell curve, with the center lying somewhere between 0.65 and 0.7. In fact, the average similarity score for all articles was 0.63. Notably, no articles had average similarity scores of less than 0.15, and three articles had similarity scores between 0.95 and 1.
+
+Some tags were used for multiple articles, but there were 566 distinct tags used overall. Depending on the hypernyms produced by our algorithm for each article, these tags could be most similar to different hypernyms. For example, one article tagged as being about ``ebola'' was most similar to the hypernym ``joy,'' while a different article about ``ebola'' was most similar to the hypernym ``ill\_health.'' We computed the average number of different hypernyms matched with each distinct tag to determine whether our algorithm truly got a sense of what the article was about. On average, each tag was matched with 1.6 different hypernyms at the end of the algorithm.
 
 \section{Issues and Further Work}
 
