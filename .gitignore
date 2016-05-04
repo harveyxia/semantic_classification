@@ -1,4 +1,6 @@
-*.aux
-*.fdb_latexmk
-*.fls
-*.pdf
+report/*.aux
+report/*.fdb_latexmk
+report/*.fls
+report/*.pdf
+report/*.synctex.gz
+*.pyc

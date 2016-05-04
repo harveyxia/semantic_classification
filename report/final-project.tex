@@ -1,80 +1,116 @@
-%
-% File acl2016.tex
-%
-%% Based on the style files for ACL-2015, with some improvements
-%%  taken from the NAACL-2016 style
-%% Based on the style files for ACL-2014, which were, in turn,
-%% Based on the style files for ACL-2013, which were, in turn,
-%% Based on the style files for ACL-2012, which were, in turn,
-%% based on the style files for ACL-2011, which were, in turn, 
-%% based on the style files for ACL-2010, which were, in turn, 
-%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
-%% based on the style files for EACL-2009 and IJCNLP-2008...
+    %
+    % File acl2016.tex
+    %
+    %% Based on the style files for ACL-2015, with some improvements
+    %%  taken from the NAACL-2016 style
+    %% Based on the style files for ACL-2014, which were, in turn,
+    %% Based on the style files for ACL-2013, which were, in turn,
+    %% Based on the style files for ACL-2012, which were, in turn,
+    %% based on the style files for ACL-2011, which were, in turn, 
+    %% based on the style files for ACL-2010, which were, in turn, 
+    %% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+    %% based on the style files for EACL-2009 and IJCNLP-2008...
 
-%% Based on the style files for EACL 2006 by 
-%%e.agirre@ehu.es or Sergi.Balari@uab.es
-%% and that of ACL 08 by Joakim Nivre and Noah Smith
+    %% Based on the style files for EACL 2006 by 
+    %%e.agirre@ehu.es or Sergi.Balari@uab.es
+    %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
-\documentclass[11pt]{article}
-\usepackage{acl2016}
-\usepackage{times}
-\usepackage{url}
-\usepackage{latexsym}
+    \documentclass[12pt]{article}
+    \usepackage{acl2016}
+    \usepackage{times}
+    \usepackage{url}
+    \usepackage{latexsym}
 
-\aclfinalcopy % Uncomment this line for the final submission
-%\def\aclpaperid{***} %  Enter the acl Paper ID here
+    \aclfinalcopy % Uncomment this line for the final submission
+    %\def\aclpaperid{***} %  Enter the acl Paper ID here
 
-%\setlength\titlebox{5cm}
-% You can expand the titlebox if you need extra space
-% to show all the authors. Please do not make the titlebox
-% smaller than 5cm (the original size); we will check this
-% in the camera-ready version and ask you to change it back.
+    %\setlength\titlebox{5cm}
+    % You can expand the titlebox if you need extra space
+    % to show all the authors. Please do not make the titlebox
+    % smaller than 5cm (the original size); we will check this
+    % in the camera-ready version and ask you to change it back.
 
-\newcommand\BibTeX{B{\sc ib}\TeX}
+    \newcommand\BibTeX{B{\sc ib}\TeX}
 
-\title{Assessing a Word Similarity Model for Determining Overall Category}
+    \title{Assessing a Word Similarity Model for Determining Overall Category}
 
-\author{Ethan Campbell-Taylor \\
-Linguistics '16\\\And
-  Becky Marvin \\
-  Cognitive Science '16 \\
-  \\\And
-  Harvey Xia \\
-  Computer Science '16 \\}
+    \author{Ethan Campbell-Taylor \\
+    Linguistics '16\\\And
+      Becky Marvin \\
+      Cognitive Science '16 \\
+      \\\And
+      Harvey Xia \\
+      Computer Science '16 \\}
 
-\date{May 9, 2016}
+    \date{May 9, 2016}
 
-\begin{document}
-\maketitle
-\begin{abstract}
-  This document contains the methodology and results of a study examining the effectiveness of using WordNet's semantic hierarchy information to classify text documents. We used the semantic similarity information from WordNet, in addition to a hierarchical clustering algorithm to determine the similarity of the nouns in a given text document. We then found the hypernyms of the resulting clusters and compared the hypernyms to the labeled categories of the document. We assessed the accuracy of our algorithm by comparing its judgments of overall categories to the actual labeled categories of documents.
-\end{abstract}
+    \begin{document}
+    \maketitle
+    \begin{abstract}
+      This document contains the methodology and results of a study examining the effectiveness of using WordNet's semantic hierarchy information to classify text documents. We used the semantic similarity information from WordNet, in addition to a hierarchical clustering algorithm to determine the similarity of the nouns in a given text document. We then found the hypernyms of the resulting clusters and compared the hypernyms to the labeled categories of the document. We assessed the accuracy of our algorithm by comparing its judgments of overall categories to the actual labeled categories of documents.
+    \end{abstract}
 
-\section{Introduction}
+    \section{Introduction}
 
-Text classification has previously been researched using ``bag of words'' representations of word meanings. We explore a different approach in this paper: that of using WordNet's available semantic similarity information combined with a hierarchical clustering algorithm to determine the overall category of a text document. We believe this approach better models the semantic information in a given document, which could be useful in determining the overall category of a document.
+    Text classification has previously been researched using ``bag of words'' representations of word meanings and a multitude of statistical methods such as generative models and discriminative models. We explore a different, non-statistical approach in this paper, that of using WordNet's available semantic similarity information combined with a hierarchical clustering algorithm to determine the overall category of a text document. We believe this approach has potential to be a promising model for representing the semantic information in a given document, which could be useful in determining the overall semantic category of a document.
+
+    \section{Our Model}
+
+    \subsection{The Algorithm}
+
+    The following is a high level overview of our classification algorithm for a single document. Each step is annotated with the corresponding Python file in bold.
+
+    \begin{enumerate}  
+    \item Extract all nouns, \textbf{noun\_extractor.py}. For each line:
+    \begin{enumerate}
+    \item Strip all punctuation and non-ascii characters.
+    \item Tokenize the line.
+    \item Tag the POS of each token.
+    \item Filter out all non-noun tokens.
+    \item Add all noun tokens to a Python dictionary as keys whose values are the counts of the token.
+    \end{enumerate}
+    \item Use WordNet to look up synsets for each noun token. Remove nouns for which no synset exists, \textbf{cluster.py}.
+    \item Generate a 2-dimension matrix of similarity values for each pairwise combination of synsets. Similarity values are looked up using WordNet.
+    \item Perform hierarchical clustering on the synsets.
+    \item Select a particular subset of clusters based on min\_size, max\_size, and max\_dist parameters, \textbf{semantic\_classifier.py}.
+    \item Sort clusters by noun token occurrence, most frequent to least.
+    \item Find the lowest common hypernym (i.e. lowest common ancestor) for each cluster of synsets.
+    \end{enumerate}
+
+    \subsection{Description of Algorithm}
+
+    Since our model is attempting to determine the category of a document based on the nouns used in it, the first step in our algorithm is to extract all the document's nouns. After removing punctuation and non-ascii characters, the algorithm tokenizes each line and tags the tokens with nltk's part of speech tagger. 
+
+    It then stems the relevant nouns, determined by whether their stemmed versions exist in wordnet. We removed the stems of words ending in ``ing,'' ``s,'' ``e,'' ``able,'' ``y,'' and ``er.'' For example, ``photography'' becomes ``photograph,'' but ``agency'' remains as is, since ``agenc'' is not recognized as a word by WordNet. After stemming, the algorithm counts every instance of each token and stores this information in a Python dictionary. For each of these tokens, the algorithm finds the corresponding synset (the set of senses listed in WordNet for the word) if it exists. These synsets are used to compute similarity measures for the purposes of clustering.
+
+    Stemming is motivated by the observation that some semantically related nouns are considered as relatively dissimilar according to WordNet. For instance, WordNet ranks "photograph" and "painting" as more similar than "photograph" and "photography." Strictly speaking, there is a sense in which "painting" is more similar to "photograph" than "photography" is—a painting and a photograph are both flat objects that contain an image, whereas photography is a process of producing images. Therefore it makes sense that WordNet places "photograph" and "photography" in different sections of the semantic tree. For our purposes of determining a document's semantic subjects, however, this WordNet's distinction between "photograph" and "photography" are too fine-grained. Collapsing those two nouns into a single noun "photograph" improves our algorithm's performance as it improves the signal for "photograph" being a salient semantic category.
+
+    Having done this, the algorithm computes a similarity matrix for every pair of nouns in the document: that is, it calculates and stores the similarity of the synsets for each noun pair. We use Wu-Palmer similarity as a measure of how similar two synsets are. Wu-Palmer similarity for synsets $s1$ and $s2$, where $lcs$ is the least common hypernym, i.e. the more informative semantic class that encloses both $s1$ and $s2$, is given by:\\
+
+    $2*depth(lcs) / (depth(s1) + depth(s2))$\\
+
+    We used the fastcluster library to do heirarchical clustering. Then we choose clusters based on three parameters: the minimum size of the cluster, the maximum size of the cluster, and the maximum distance of the cluster (a cluster's distance is a measure of how far apart elements in the cluster are from each other, distance in this case being Wu-Palmer similarity between synsets).
+
+    One interesting observation about choosing the set of clusters is that the larger the cluster size, the farther apart and thus more dissimilar its constituent synsets. Finding the lowest common hypernym of large clusters with large distances yields less informative hypernyms. In the extreme case, if the cluster contains a sufficiently diverse set of synsets, the lowest common hypernym becomes the root of the WordNet semantic tree, "entity." Larger cluster sizes, however, give the algorithm greater potential in synthesizing synsets into a particular hypernym. In the trivial case, the algorithm could simply return the set of nouns of the document as its representation of the document's semantic class. The ideal algorithm, however, would perform some degree of synthesis amongst the nouns and "infer" relevant semantic categories from constituent nouns. Because of this trade off between potential synthesis of nouns and a decrease in hypernym informativity, our algorithm exposes these parameters to the programmer to allow them to adjust the parameters according to their particular needs.
+
+    We chose to exclude clusters smaller than size 2 and larger than size 99, as well as those with a distance of less than 0.5. The clusters are then sorted by size, those with the greatest number of raw tokens appearing first. Finally, for each cluster, the algorithm finds the hypernym (the least common ancestor of all the synsets in the cluster).
+
+    The algorithm evaluates performance by finding the item in the hypernyms returned by our algorithm that is most similar to a tag for each labeled tag of the text document. We use Wu-Palmer similarity as a measure of how similar two words are according to WordNet.
+
+    \section{The Corpus}
+
+    NPR woooooo
+
+    \section{Issues and Further Work}
+
+    When looking up a synset for a particular noun token, WordNet returns a list of possible synsets if that noun token has multiple senses, sorted in order of most commonly appearing sense first. Our algorithm currently chooses the first synset, i.e. the most common sense of the noun. But this is of course an approximation as the most common sense is not necessarily the correct sense used in the context of the document. This therefore introduces noise into our results. Selecting the correct sense of a noun token is a difficult problem that requires the algorithm to not only understand the context in which the noun token appears, but to be able to infer from the context what the most plausible sense is.
 
 
-\section{Our Model}
 
-\subsection{The Algorithm}
+    % include your own bib file like this:
+    %\bibliographystyle{acl}
+    %\bibliography{acl2016}
+    \bibliography{acl2016}
+    \bibliographystyle{acl2016}
 
-Since our model is attempting to determine the category of a document based on the nouns used in it, the first step in our algorithm is to extract all the document's nouns. After removing punctuation and non-ascii characters, the algorithm tokenizes each line and tags the tokens with nltk's part of speech tagger. 
-
-It then stems the relevant nouns, determined by whether their stemmed versions exist in wordnet. We removed the stems of words ending in ``ing,'' ``s,'' ``e,'' ``able,'' ``y,'' and ``er.'' For example, ``photography'' becomes ``photograph,'' but ``agency'' remains as is, since ``agenc'' is not recognized as a word by WordNet. After stemming, the algorithm counts every instance of each token and stores this information in a Python dictionary. For each of these tokens, the algorithm finds the corresponding synset (the set of senses listed in WordNet for the word) if it exists. These synsets are used to compute similarity measures for the purposes of clustering.
-
-Having done this, the algorithm computes a similarity matrix for every pair of nouns in the document: that is, it calculates and stores the similarity of the synsets for each noun pair. We used the fastcluster library to do heirarchical clustering: we  exclude clusters smaller than size 2 and larger than size 99, as well as those with a distance of less than 0.5. The clusters are then sorted by size, those with the greatest number of raw tokens appearing first. Finally, for each cluster, the algorithm finds the hypernym (the least common ancestor of all the synsets in the cluster).
-
-The algorithm evaluates performance by finding the item in the hypernyms returned by our algorithm that is most similar to a tag for each labeled tag of the text document. We use Wu-Palmer similarity as a measure of how similar two words are according to WordNet.
-
-\section{The Corpus}
-
-NPR woooooo
-
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2016}
-\bibliography{acl2016}
-\bibliographystyle{acl2016}
-
-\end{document}
+    \end{document}
