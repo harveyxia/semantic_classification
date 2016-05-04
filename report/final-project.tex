@@ -57,6 +57,10 @@ Linguistics '16\\\And
 
 Text classification has previously been researched using ``bag of words'' representations of word meanings and a multitude of statistical methods such as generative models and discriminative models. We explore a different, non-statistical approach in this paper, that of using WordNet's available semantic similarity information combined with a hierarchical clustering algorithm to determine the overall category of a text document. We believe this approach has potential to be a promising model for representing the semantic information in a given document, which could be useful in determining the overall semantic category of a document.
 
+\section{Motivation}
+
+A document's semantic meaning is partially represented by the set of nouns that appear in the document. Our hypothesis is that the set of nouns of any given document are semantically related and that this semantic structure can be used to infer the document's semantic meaning as a whole, in particular its content category. Trivially, a document's content can be represented as its set of nouns. We wish to use WordNet's semantic hierarchy to synthesize the set of nouns into a reduced set of synsets, i.e. noun senses, that capture the overall category of the document in a more cohesive way. For instance, we would like our model to say that a document is about "canines" rather than about "dogs," "wolves", and "foxes." This synset synthesis is accomplished through using WordNet to find lowest common hypernyms for sets of synsets. Furthermore, we would like to return a set of synsets that are ranked according to their salience to the document's overall meaning.
+
 \section{Our Model}
 
 \subsection{The Algorithm}
@@ -120,7 +124,7 @@ This score would be closer to 1 if the closest hypernym for each tag was highly 
 
 We computed these similarity scores explained above for each article, and the resulting distribution of scores for each article is shown in Figure \ref{scoreHist}.
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 \centering
 \includegraphics[width=\textwidth]{../scoreHist.png}
 \caption{Distribution of scores.}

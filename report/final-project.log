@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2016 14:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2016 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -183,24 +183,9 @@ Underfull \hbox (badness 2573) in paragraph at lines 53--54
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 67--68
+Underfull \hbox (badness 1132) in paragraph at lines 71--72
 []\OT1/ptm/m/n/12 Extract all nouns, \OT1/ptm/b/n/12 noun[]extractor.py\OT1/ptm
 /m/n/12 .
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/12 Select a par-tic-u-lar sub-set of clus-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\OT1/ptm/m/n/12 ters based on min[]size, max[]size,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\OT1/ptm/m/n/12 and max[]dist pa-ram-e-ters, \OT1/ptm/b/n/12 se-man-
  []
 
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -208,74 +193,86 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
 
 ]
+Underfull \hbox (badness 6725) in paragraph at lines 82--83
+[]\OT1/ptm/m/n/12 Select a par-tic-u-lar sub-set of clus-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+\OT1/ptm/m/n/12 ters based on min[]size, max[]size,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+\OT1/ptm/m/n/12 and max[]dist pa-ram-e-ters, \OT1/ptm/b/n/12 se-man-
+ []
+
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 1082) in paragraph at lines 89--90
+Underfull \hbox (badness 1082) in paragraph at lines 93--94
 []\OT1/ptm/m/n/12 Stemming is mo-ti-vated by the ob-ser-va-
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 91--92
+Underfull \hbox (badness 2096) in paragraph at lines 95--96
 \OT1/ptm/m/n/12 and $\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 2$\OT1/ptm/m/n/12 , wher
 e $\OML/cmm/m/it/12 lcs$ \OT1/ptm/m/n/12 is the least com-mon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
  []
 
-<hca.png, id=8, 578.16pt x 433.62pt>
-File: hca.png Graphic file (type png)
- <use hca.png>
-Package pdftex.def Info: hca.png used on input line 100.
-(pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
 
 Underfull \vbox (badness 1248) has occurred while \output is active []
 
  [2]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<hca.png, id=14, 578.16pt x 433.62pt>
+File: hca.png Graphic file (type png)
+ <use hca.png>
+Package pdftex.def Info: hca.png used on input line 104.
+(pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
 
-
-Overfull \hbox (5.4148pt too wide) detected at line 115
+Overfull \hbox (5.4148pt too wide) detected at line 119
 [] [] []
  []
 
-[3 <./hca.png>]
-Underfull \hbox (badness 2205) in paragraph at lines 121--122
+
+Underfull \hbox (badness 2205) in paragraph at lines 125--126
 \OT1/ptm/m/n/12 We com-puted these sim-i-lar-ity scores ex-
  []
 
-<../scoreHist.png, id=23, 621.522pt x 417.7206pt>
+<../scoreHist.png, id=16, 621.522pt x 417.7206pt>
 File: ../scoreHist.png Graphic file (type png)
  <use ../scoreHist.png>
-Package pdftex.def Info: ../scoreHist.png used on input line 125.
+Package pdftex.def Info: ../scoreHist.png used on input line 129.
 (pdftex.def)             Requested size: 455.24408pt x 305.97244pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3]
 No file final-project.bbl.
 [4
 
-] [5 <../scoreHist.png>] (./final-project.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+ <./hca.png>] [5 <../scoreHist.png>] (./final-project.aux) )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
  1728 strings out of 493089
  24867 string characters out of 6134842
- 88252 words of memory out of 5000000
+ 89252 words of memory out of 5000000
  5194 multiletter control sequences out of 15000+600000
  12589 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,23p,1118b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,23p,1118b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fon
@@ -286,7 +283,7 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb>
-Output written on final-project.pdf (5 pages, 155569 bytes).
+Output written on final-project.pdf (5 pages, 156510 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
