@@ -10,6 +10,16 @@ nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 ```
 
+## Running the script
+
+1. open an ipython terminal
+2. `run semantic_classifier.py`
+3. `output = run('filename.txt', min_size, max_size, max_dist)`
+4. `output.hypernyms`
+
+Replace the 'filename.txt' with the input file of choice, and set the `min_size`,
+`max_size`, and `max_dist.` The last step outputs the ordered list of hypernyms.
+
 ## Algorithm
 
 semantic_classifier.py
