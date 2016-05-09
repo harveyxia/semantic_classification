@@ -22,6 +22,7 @@
 \usepackage{latexsym}
 \usepackage{graphicx}
 
+
 \graphicspath{ {.} }
 
 \aclfinalcopy % Uncomment this line for the final submission
@@ -34,6 +35,8 @@
 % in the camera-ready version and ask you to change it back.
 
 \newcommand\BibTeX{B{\sc ib}\TeX}
+
+\linespread{1.1}
 
 \title{Assessing a Word Similarity Model for Determining Overall Category}
 
@@ -135,6 +138,10 @@ The distribution of scores roughly approximates a bell curve, with the center ly
 
 Some tags were used for multiple articles, but there were 566 distinct tags used overall. Depending on the hypernyms produced by our algorithm for each article, these tags could be most similar to different hypernyms. For example, one article tagged as being about ``ebola'' was most similar to the hypernym ``joy,'' while a different article about ``ebola'' was most similar to the hypernym ``ill\_health.'' We computed the average number of different hypernyms matched with each distinct tag to determine whether our algorithm truly got a sense of what the article was about. On average, each tag was matched with 1.6 different hypernyms at the end of the algorithm.
 
+\section{Discussion}
+
+We can see from the results reported in Figure \ref{scoreHist} that many of the best similarity scores are above 0.5. This tells us that our model is able to achieve an average level of similarity that is closer to 1.0 than to 0. While ideally the similarity scores would all be closer to 1.0, our model provides a good first pass at attempting to determine semantic categories. Additionally, on average, each official tag in the corpus of documents was matched with 1.6 different hypernyms throughout the course of the algorithm. This means that our algorithm showed some consistency when attempting to match tags with hypernyms. On average, the algorithm did not assign many varied hypernyms to the same tag used for different documents. Both of these results highlight the early success of our algorithm. The algorithm not only is consistent at matching tags and hypernyms, and thus does seem to have a good sense of what the different text documents are about, but it also computes matchings that are highly similar, highlighting its success at correctly identifying the overall category of a given document.
+
 \section{Issues and Further Work}
 
 When looking up a synset for a particular noun token, WordNet returns a list of possible synsets if that noun token has multiple senses, sorted in order of most commonly appearing sense first. Our algorithm currently chooses the first synset i.e. the most common sense of the noun. But this is of course an approximation as the most common sense is not necessarily the correct sense used in the context of the document. This therefore introduces noise into our results. Selecting the correct sense of a noun token is a difficult problem that requires the algorithm to not only understand the context in which the noun token appears, but to be able to infer from the context what the most plausible sense is.
@@ -142,10 +149,6 @@ When looking up a synset for a particular noun token, WordNet returns a list of 
 Another potential concern is that a considerable number of the nouns in the documents examined did not have WordNet entries. There are a few reasons for this: firstly, the majority of the articles we ran our algorithm on were health articles. As a result, many of the nouns used in the articles were medical in nature, and often did not have entries in WordNet. There are of course non-medical nouns that do not have entries, particularly proper nouns. In total, 1802 noun tokens did not have WordNet entries, which corresponds to an average of 5\% of the nouns in each document. As mentioned in Section \ref{model}, we had to remove nouns with no synsets before doing clustering. The exclusion of these nouns means the returned hypernyms are not as accurate as we would prefer. This is especially concerning considering that articles with a large number of nouns with very specific semantics (i.e. nouns less likely to have WordNet entries, such as medical nouns) are more likely to be about some topic in that semantic field. It is likely, then, that the omission of all these nouns has a significant detrimental effect on the hypernyms returned.
 
 A similar issue is that some of the tags NPR uses on their articles do not have entries in WordNet. These tags may be proper nouns, multiple words, or words with specific semantics. As a result, we had to manually modify or remove these tags from the articles. Multiple-word tags were typically split into separate tags, leaving out function words such as ``the.'' Other tags were simply shortened; one of the most common tags was ``zika virus,'' which we changed to ``virus'' for articles that didn't already have a ``virus'' tag. Removing and modifying tags presumably affects the similarity scores between the hypernyms and the tags for the article, which confounds our ability to evaluate the model. A better method for future refinements of this algorithm might be to manually tag articles rather than using those included in the source.
-
-\section{Discussion}
-
-
 
 % include your own bib file like this:
 %\bibliographystyle{acl}

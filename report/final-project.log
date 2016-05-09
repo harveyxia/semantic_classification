@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAY 2016 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  9 MAY 2016 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -83,19 +83,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (./final-project.aux)
 \openout1 = `final-project.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -163,27 +163,27 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 51.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 51.
+(Font)              <6> on input line 54.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 54.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 
-Underfull \hbox (badness 2573) in paragraph at lines 53--54
+Underfull \hbox (badness 2573) in paragraph at lines 56--57
 \OT1/ptm/m/n/12 the se-man-tic sim-i-lar-ity in-for-ma-tion
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 71--72
+Underfull \hbox (badness 1132) in paragraph at lines 74--75
 []\OT1/ptm/m/n/12 Extract all nouns, \OT1/ptm/b/n/12 noun[]extractor.py\OT1/ptm
 /m/n/12 .
  []
@@ -193,17 +193,17 @@ Underfull \hbox (badness 1132) in paragraph at lines 71--72
 
 
 ]
-Underfull \hbox (badness 6725) in paragraph at lines 82--83
+Underfull \hbox (badness 6725) in paragraph at lines 85--86
 []\OT1/ptm/m/n/12 Select a par-tic-u-lar sub-set of clus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OT1/ptm/m/n/12 ters based on min[]size, max[]size,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 \OT1/ptm/m/n/12 and max[]dist pa-ram-e-ters, \OT1/ptm/b/n/12 se-man-
  []
 
@@ -211,68 +211,70 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ” in font ptmr7t!
 
-Underfull \hbox (badness 1082) in paragraph at lines 93--94
+Underfull \hbox (badness 1082) in paragraph at lines 96--97
 []\OT1/ptm/m/n/12 Stemming is mo-ti-vated by the ob-ser-va-
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 95--96
+Underfull \hbox (badness 2096) in paragraph at lines 98--99
 \OT1/ptm/m/n/12 and $\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 2$\OT1/ptm/m/n/12 , wher
 e $\OML/cmm/m/it/12 lcs$ \OT1/ptm/m/n/12 is the least com-mon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
-
- []
-
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
+Underfull \vbox (badness 1490) has occurred while \output is active []
 
  [2]
-<hca.png, id=14, 578.16pt x 433.62pt>
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+<hca.png, id=13, 578.16pt x 433.62pt>
 File: hca.png Graphic file (type png)
  <use hca.png>
-Package pdftex.def Info: hca.png used on input line 104.
+Package pdftex.def Info: hca.png used on input line 107.
 (pdftex.def)             Requested size: 455.24408pt x 341.43124pt.
 
-Overfull \hbox (5.4148pt too wide) detected at line 119
+Overfull \hbox (5.4148pt too wide) detected at line 122
 [] [] []
  []
 
 
-Underfull \hbox (badness 2205) in paragraph at lines 125--126
+Underfull \hbox (badness 2205) in paragraph at lines 128--129
 \OT1/ptm/m/n/12 We com-puted these sim-i-lar-ity scores ex-
  []
 
-<../scoreHist.png, id=16, 621.522pt x 417.7206pt>
+<../scoreHist.png, id=15, 621.522pt x 417.7206pt>
 File: ../scoreHist.png Graphic file (type png)
  <use ../scoreHist.png>
-Package pdftex.def Info: ../scoreHist.png used on input line 129.
+Package pdftex.def Info: ../scoreHist.png used on input line 132.
 (pdftex.def)             Requested size: 455.24408pt x 305.97244pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
-No file final-project.bbl.
-[4
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- <./hca.png>] [5 <../scoreHist.png>] (./final-project.aux) )
+ [4 <./hca.png>] [5 <../scoreHist.png>]
+No file final-project.bbl.
+[6
+
+] (./final-project.aux) )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 1728 strings out of 493089
- 24867 string characters out of 6134842
- 89252 words of memory out of 5000000
- 5194 multiletter control sequences out of 15000+600000
+ 1729 strings out of 493089
+ 24874 string characters out of 6134842
+ 88263 words of memory out of 5000000
+ 5195 multiletter control sequences out of 15000+600000
  12589 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,9n,23p,1118b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,9n,23p,1176b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 5/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fon
@@ -283,10 +285,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb>
-Output written on final-project.pdf (5 pages, 156510 bytes).
+Output written on final-project.pdf (6 pages, 160788 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
