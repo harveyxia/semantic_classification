@@ -21,6 +21,8 @@
 \usepackage{url}
 \usepackage{latexsym}
 \usepackage{graphicx}
+\usepackage{biblatex}
+\addbibresource{ref.bib}
 
 
 \graphicspath{ {.} }
@@ -53,12 +55,12 @@ Linguistics '16\\\And
 \begin{document}
 \maketitle
 \begin{abstract}
-  This document contains the methodology and results of a study examining the effectiveness of using WordNet's semantic hierarchy information to classify text documents. We used the semantic similarity information from WordNet, in addition to a hierarchical clustering algorithm to determine the similarity of the nouns in a given text document. We then found the hypernyms of the resulting clusters and compared the hypernyms to the labeled categories of the document. We assessed the accuracy of our algorithm by comparing its judgments of overall categories to the actual labeled categories of documents.
+  This document contains the methodology and results of a study examining the effectiveness of using WordNet's \cite{wordnet} semantic hierarchy information to classify text documents. We used the semantic similarity information from WordNet, in addition to a hierarchical clustering algorithm to determine the similarity of the nouns in a given text document. We then found the hypernyms of the resulting clusters and compared the hypernyms to the labeled categories of the document. We assessed the accuracy of our algorithm by comparing its judgments of overall categories to the actual labeled categories of documents.
 \end{abstract}
 
 \section{Introduction}
 
-Text classification has previously been researched using ``bag of words'' representations of word meanings and a multitude of statistical methods such as generative models and discriminative models. We explore a different, non-statistical approach in this paper, that of using WordNet's available semantic similarity information combined with a hierarchical clustering algorithm to determine the overall category of a text document. We believe this approach has potential to be a promising model for representing the semantic information in a given document, which could be useful in determining the overall semantic category of a document.
+Text classification has previously been researched using ``bag of words'' representations of word meanings and a multitude of statistical methods such as generative models and discriminative models \cite{survey}. We explore a different, non-statistical approach in this paper, that of using WordNet's available semantic similarity information combined with a hierarchical clustering algorithm to determine the overall category of a text document. We believe this approach has potential to be a promising model for representing the semantic information in a given document, which could be useful in determining the overall semantic category of a document.
 
 \section{Motivation}
 
@@ -150,10 +152,9 @@ Another potential concern is that a considerable number of the nouns in the docu
 
 A similar issue is that some of the tags NPR uses on their articles do not have entries in WordNet. These tags may be proper nouns, multiple words, or words with specific semantics. As a result, we had to manually modify or remove these tags from the articles. Multiple-word tags were typically split into separate tags, leaving out function words such as ``the.'' Other tags were simply shortened; one of the most common tags was ``zika virus,'' which we changed to ``virus'' for articles that didn't already have a ``virus'' tag. Removing and modifying tags presumably affects the similarity scores between the hypernyms and the tags for the article, which confounds our ability to evaluate the model. A better method for future refinements of this algorithm might be to manually tag articles rather than using those included in the source.
 
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{acl2016}
-\bibliography{acl2016}
-\bibliographystyle{acl2016}
+% \bibliographystyle{acl2016}
+% \bibliography{ref}
+
+\printbibliography
 
 \end{document}
